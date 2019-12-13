@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: prod
+    application:
+      name: showcase
+---
+spring:
+  profiles: dev
+
+server:
+  port: 8081
+
+---
+spring:
+  profiles: prod
+
+server:
+  port: 8000
+---
+spring:
+    data:
+      mongodb:
+        uri: mongodb://114.116.9.214:27017/test
+---
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 617591732@qq.com
+    password: sbdagequujkebedh
+    port: 587
+    default-encoding: UTF-8
+    from: 617591732@qq.com
